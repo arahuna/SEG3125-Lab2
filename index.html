@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+		<link href="styles/style.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
@@ -26,31 +26,31 @@
 			<p>Tell us a bit about you.</p>
 			Select all that apply to you <br />
 
-      <div class="display-box" >
-        <input
-				type="checkbox"
-        id="vegetarian"
-        class="restriction"
-				onclick="restrictions.vegetarian = !restrictions.vegetarian"
-			/>
-      <label> Vegetarian </label>
-      <br>
-			<input
-				type="checkbox"
-        id="glutenFree"
-        class="restriction"
-				onClick="restrictions.glutenFree = !restrictions.glutenFree"
-			/>
-      <label> Gluten-free </label>
-      <br>
-			<input
-				type="checkbox"
-        id="organic"
-        class="restriction"
-				onClick="restrictions.organic = !restrictions.glutenFree"
-			/>
-			<label> Organic </label>
-      </div>
+			<div class="display-box">
+				<input
+					type="checkbox"
+					id="vegetarian"
+					class="restriction"
+					onclick="restrictions.vegetarian = !restrictions.vegetarian"
+				/>
+				<label> Vegetarian </label>
+				<br />
+				<input
+					type="checkbox"
+					id="glutenFree"
+					class="restriction"
+					onClick="restrictions.glutenFree = !restrictions.glutenFree"
+				/>
+				<label> Gluten-free </label>
+				<br />
+				<input
+					type="checkbox"
+					id="organic"
+					class="restriction"
+					onClick="restrictions.organic = !restrictions.organic"
+				/>
+				<label> Organic </label>
+			</div>
 		</div>
 
 		<div id="Products" class="tabcontent">
@@ -72,9 +72,9 @@
 			<h3>Cart</h3>
 			<p>Here is your cart.</p>
 			<div id="displayCart"></div>
-    </div>
-    
-    <p class="signature">Website designed by Ara Kirijian</p>
+		</div>
+
+		<p class="signature">Website designed by Ara Kirijian</p>
 
 		<script src="scripts/groceries.js"></script>
 		<script src="scripts/main.js"></script>

@@ -87,12 +87,13 @@ var restrictions = {
 // prices should be included in this list, as well as a sort based on price
 
 function filterProducts() {
-	
+	console.log(this.restrictions)
+
 	var avail_products = [...this.products];
 
 	// If any of the restrictions have been applied, we filter them out, otherwise we can keep the list as is
 	if(restrictions.vegetarian || restrictions.glutenFree || restrictions.organic) {
-		avail_products = this.avail_products.filter(function(prod) {
+		avail_products = avail_products.filter(function(prod) {
 			return (!this.restrictions.vegetarian ? true : prod.vegetarian == this.restrictions.vegetarian) &&
 				   (!this.restrictions.glutenFree ? true : prod.glutenFree == this.restrictions.glutenFree) &&
 				   (!this.restrictions.organic ? true : prod.organic == this.restrictions.organic)
