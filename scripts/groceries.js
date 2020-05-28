@@ -87,7 +87,6 @@ var restrictions = {
 // prices should be included in this list, as well as a sort based on price
 
 function filterProducts() {
-	console.log(this.restrictions)
 
 	var avail_products = [...this.products];
 
