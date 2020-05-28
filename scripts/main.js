@@ -76,6 +76,9 @@ function selectedItems(){
 	
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
+
+	var d = document.getElementById('success');
+	d.innerHTML = ""
 	
 	// build list of selected item
 	var para = document.createElement("P");
@@ -88,6 +91,8 @@ function selectedItems(){
 			chosenProducts.push(ele[i].value);
 		}
 	}
+
+	d.appendChild(document.createTextNode("Success, your items have been added to your cart."))
 		
 	// add paragraph and total price
 	c.appendChild(para);
